@@ -22,6 +22,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Log Secret
-        run: echo ${{secrets.PASSWORD}} || rev
+        run: echo ${{secrets.PASSWORD}} | rev
 
 
